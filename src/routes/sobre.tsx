@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import interiorImg from "@/assets/interior.jpg";
 import transferImg from "@/assets/transfer.jpg";
-import { Award, Heart, Users, Globe } from "lucide-react";
+import { Award, Heart, Users, Globe, Car, MapPin, Moon, CalendarDays, Route as RouteIcon, Users2 } from "lucide-react";
 
 export const Route = createFileRoute("/sobre")({
   head: () => ({
