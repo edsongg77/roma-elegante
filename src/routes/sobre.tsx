@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import interiorImg from "@/assets/interior.jpg";
 import transferImg from "@/assets/transfer.jpg";
-import { Award, Heart, Users, Globe } from "lucide-react";
+import { Award, Heart, Users, Globe, Car, MapPin, Moon, CalendarDays, Route as RouteIcon, Users2 } from "lucide-react";
 
 export const Route = createFileRoute("/sobre")({
   head: () => ({
@@ -33,22 +33,28 @@ function AboutPage() {
             <h2 className="mt-4 font-display text-4xl md:text-5xl">Nossa história</h2>
             <div className="mt-8 space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
-                Fundada em Roma há mais de uma década, a Tours Roma Italia nasceu
-                de um propósito simples: oferecer a viajantes de todo o mundo um
-                serviço de transporte privado que combine a hospitalidade
-                italiana com a excelência do serviço europeu.
+                A Tours Roma Italia surgiu através da paixão e da admiração
+                por trabalhar oferecendo serviços de qualidade e conforto a
+                pessoas de outros países que desejam conhecer o nosso país.
               </p>
               <p>
-                Começamos com um único Mercedes e o desejo genuíno de mostrar a
-                Itália como só quem vive aqui pode mostrar. Hoje, atendemos
-                centenas de famílias, executivos e agências de luxo ao redor do
-                mundo, sempre com a mesma discrição e atenção ao detalhe.
+                Atuamos no ramo turístico há mais de 10 anos em várias
+                cidades da Itália. Com sede em Roma, atendemos toda a
+                região do Lazio, muitas cidades do Sul — como Nápoles,
+                Positano, Amalfi e Pompeia — e do Centro-Norte, incluindo
+                Florença, Pisa, Siena, entre muitas outras.
               </p>
               <p>
-                Falamos português, italiano, inglês e espanhol — porque cada
-                viajante merece ser recebido em sua própria língua.
+                Nosso diferencial está em oferecer sempre o melhor conforto,
+                segurança e atendimento personalizado. Para receber cada
+                viajante em sua própria língua, nossos motoristas atendem em
+                quatro idiomas: português, italiano, inglês e espanhol.
+              </p>
+              <p className="font-display text-2xl italic text-gold">
+                Grazie Mille!
               </p>
             </div>
+
           </div>
           <div className="relative">
             <div className="absolute -right-4 -top-4 h-full w-full border border-gold/30" />
@@ -104,6 +110,48 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
+      <section className="border-t border-border bg-[oklch(0.04_0_0)] py-24 md:py-32">
+        <div className="container-x">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">Cosa offriamo</span>
+            <h2 className="mt-4 font-display text-4xl md:text-5xl">O que oferecemos</h2>
+            <p className="mt-6 text-muted-foreground">
+              Uma gama completa de serviços privados para você viver a
+              Itália com conforto, segurança e liberdade.
+            </p>
+          </div>
+          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Car, title: "Transfers", text: "Aeroportos, hotéis, portos e estações com pontualidade absoluta." },
+              { icon: MapPin, title: "Passeios Guiados", text: "Roteiros privados pelas principais cidades e atrações italianas." },
+              { icon: RouteIcon, title: "Viagens Multi-Cidades", text: "Itinerários que conectam várias cidades da Itália em uma só experiência." },
+              { icon: CalendarDays, title: "Estadias em Cidades", text: "Passeios de vários dias para conhecer uma cidade a fundo." },
+              { icon: Moon, title: "Roma by Night", text: "Roma iluminada em um tour noturno inesquecível." },
+              { icon: Users2, title: "Motorista para Eventos", text: "Chauffeur particular para casamentos, reuniões e ocasiões especiais." },
+            ].map((s) => (
+              <div key={s.title} className="border border-border bg-card p-8 transition-colors hover:border-gold">
+                <s.icon className="h-7 w-7 text-gold" strokeWidth={1.3} />
+                <h3 className="mt-6 font-display text-xl">{s.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 text-center">
+        <div className="container-x">
+          <p className="eyebrow">Il nostro saluto</p>
+          <p className="mt-6 font-display text-6xl italic text-gold md:text-7xl">
+            Grazie Mille!
+          </p>
+          <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
+            Nossa forma de agradecer a quem escolhe viver a Itália ao nosso lado.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
+

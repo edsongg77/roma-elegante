@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import transferImg from "@/assets/transfer.jpg";
-import { Plane, Hotel, Ship, TrainFront, Route as RouteIcon, Car, ArrowRight, Check } from "lucide-react";
+import { Plane, Hotel, Ship, TrainFront, Route as RouteIcon, Car, ArrowRight, Check, Moon, Users2 } from "lucide-react";
 import { WHATSAPP } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/transfers")({
@@ -23,6 +23,9 @@ const services = [
   { icon: TrainFront, title: "Estação → Hotel", text: "Encontre-se com seu motorista já na plataforma da estação." },
   { icon: RouteIcon, title: "Entre Cidades", text: "Roma, Florença, Pisa, Siena, Nápoles, Positano, Amalfi e Pompeia." },
   { icon: Car, title: "Motorista por Diária", text: "Chauffeur exclusivo à disposição por dia ou meio dia." },
+  { icon: Moon, title: "Roma by Night", text: "Roma iluminada em um tour noturno privado inesquecível." },
+  { icon: Users2, title: "Eventos & Ocasiões", text: "Motorista particular para casamentos, reuniões e eventos especiais." },
+
 ];
 
 const routes = [

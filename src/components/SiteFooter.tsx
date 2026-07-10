@@ -17,6 +17,8 @@ export function SiteFooter() {
               Transfers privados e tours exclusivos pela Itália. Mais de uma década
               transformando deslocamentos em experiências memoráveis.
             </p>
+            <p className="mt-6 font-display text-2xl italic text-gold">Grazie Mille!</p>
+
             <div className="mt-8 flex items-center gap-3">
               <a
                 href="#"
