@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import transferImg from "@/assets/transfer.jpg";
-import { Plane, Hotel, Ship, TrainFront, Route as RouteIcon, Car, ArrowRight, Check } from "lucide-react";
+import { Plane, Hotel, Ship, TrainFront, Route as RouteIcon, Car, ArrowRight, Check, Moon, Users2 } from "lucide-react";
 import { WHATSAPP } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/transfers")({
