@@ -33,22 +33,28 @@ function AboutPage() {
             <h2 className="mt-4 font-display text-4xl md:text-5xl">Nossa história</h2>
             <div className="mt-8 space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
-                Fundada em Roma há mais de uma década, a Tours Roma Italia nasceu
-                de um propósito simples: oferecer a viajantes de todo o mundo um
-                serviço de transporte privado que combine a hospitalidade
-                italiana com a excelência do serviço europeu.
+                A Tours Roma Italia surgiu através da paixão e da admiração
+                por trabalhar oferecendo serviços de qualidade e conforto a
+                pessoas de outros países que desejam conhecer o nosso país.
               </p>
               <p>
-                Começamos com um único Mercedes e o desejo genuíno de mostrar a
-                Itália como só quem vive aqui pode mostrar. Hoje, atendemos
-                centenas de famílias, executivos e agências de luxo ao redor do
-                mundo, sempre com a mesma discrição e atenção ao detalhe.
+                Atuamos no ramo turístico há mais de 10 anos em várias
+                cidades da Itália. Com sede em Roma, atendemos toda a
+                região do Lazio, muitas cidades do Sul — como Nápoles,
+                Positano, Amalfi e Pompeia — e do Centro-Norte, incluindo
+                Florença, Pisa, Siena, entre muitas outras.
               </p>
               <p>
-                Falamos português, italiano, inglês e espanhol — porque cada
-                viajante merece ser recebido em sua própria língua.
+                Nosso diferencial está em oferecer sempre o melhor conforto,
+                segurança e atendimento personalizado. Para receber cada
+                viajante em sua própria língua, nossos motoristas atendem em
+                quatro idiomas: português, italiano, inglês e espanhol.
+              </p>
+              <p className="font-display text-2xl italic text-gold">
+                Grazie Mille!
               </p>
             </div>
+
           </div>
           <div className="relative">
             <div className="absolute -right-4 -top-4 h-full w-full border border-gold/30" />
