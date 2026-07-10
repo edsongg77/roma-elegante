@@ -54,7 +54,7 @@ export function SiteFooter() {
             <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>+39 300 000 0000</span>
+                <span>+39 339 741 0650</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

@@ -11,7 +11,7 @@ const nav = [
   { to: "/contato", label: "Contato" },
 ] as const;
 
-const WHATSAPP = "https://wa.me/393000000000?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento.";
+const WHATSAPP = "https://wa.me/393397410650?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento.";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
