@@ -116,8 +116,8 @@ function HomePage() {
                 <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">Idiomas</p>
               </div>
               <div>
-                <p className="font-display text-3xl text-gold">5⋆</p>
-                <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">Avaliação</p>
+                <p className="font-display text-3xl text-gold">24/7</p>
+                <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">Suporte</p>
               </div>
             </div>
             <Link
