@@ -30,7 +30,7 @@ function HomePage() {
       <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Carro executivo preto em frente ao Coliseu de Roma ao entardecer"
+          alt="Coliseu de Roma ao entardecer"
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
