@@ -24,7 +24,7 @@ export const Route = createFileRoute("/galeria")({
 });
 
 const images = [
-  { src: hero, alt: "Mercedes preto em frente ao Coliseu", label: "Roma" },
+  { src: hero, alt: "Carro executivo preto em frente ao Coliseu", label: "Roma" },
   { src: trevi, alt: "Fontana di Trevi iluminada à noite", label: "Trevi" },
   { src: vatican, alt: "Cúpula do Vaticano", label: "Vaticano" },
   { src: florence, alt: "Duomo de Florença ao pôr do sol", label: "Firenze" },
@@ -32,7 +32,7 @@ const images = [
   { src: tuscany, alt: "Colinas da Toscana com cipestres", label: "Toscana" },
   { src: tours, alt: "Vila de Positano ao entardecer", label: "Positano" },
   { src: pompeii, alt: "Ruínas de Pompeia com Vesúvio", label: "Pompei" },
-  { src: interior, alt: "Interior de Mercedes V-Class", label: "Frota" },
+  { src: interior, alt: "Interior de van executiva", label: "Frota" },
   { src: transfer, alt: "Chauffeur profissional no aeroporto", label: "Transfer" },
 ];
 
