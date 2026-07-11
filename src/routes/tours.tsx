@@ -25,11 +25,11 @@ export const Route = createFileRoute("/tours")({
 const tours = [
   { title: "Roma Clássica", img: trevi, duration: "8h", places: "Coliseu · Fórum · Trevi · Piazza Navona", text: "Um dia completo pelos ícones eternos da Cidade Eterna." },
   { title: "Vaticano Exclusivo", img: vatican, duration: "5h", places: "Basílica · Museus · Capela Sistina", text: "Entrada preferencial e roteiro sem filas pela menor cidade do mundo." },
-  { title: "Toscana em um dia", img: tuscany, duration: "10h", places: "San Gimignano · Siena · Vinícola", text: "Colinas, cipestres e degustação em uma vinícola familiar." },
+  { title: "Toscana em um dia", img: tuscany, duration: "10h", places: "San Gimignano · Siena · Vinícola", text: "Colinas, ciprestes e degustação em uma vinícola familiar." },
   { title: "Florença & Pisa", img: florence, duration: "12h", places: "Duomo · Ponte Vecchio · Torre", text: "O berço do Renascimento em um dia inesquecível." },
   { title: "Costa Amalfitana", img: toursImg, duration: "10h", places: "Positano · Amalfi · Ravello", text: "Mar, penhascos e vilarejos suspensos entre o azul." },
   { title: "Pompeia & Vesúvio", img: pompeii, duration: "9h", places: "Ruínas · Vulcão · Nápoles", text: "Arqueologia romana e paisagens vulcânicas ao sul." },
-  { title: "Veneza Romântica", img: venice, duration: "Dia inteiro", places: "San Marco · Rialto · Gondola", text: "Canais, arte e uma passeio de gôndola ao entardecer." },
+  { title: "Veneza Romântica", img: venice, duration: "Dia inteiro", places: "San Marco · Rialto · Gondola", text: "Canais, arte e um passeio de gôndola ao entardecer." },
 ];
 
 function ToursPage() {

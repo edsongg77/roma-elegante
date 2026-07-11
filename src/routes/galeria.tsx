@@ -24,16 +24,16 @@ export const Route = createFileRoute("/galeria")({
 });
 
 const images = [
-  { src: hero, alt: "Carro executivo preto em frente ao Coliseu", label: "Roma" },
+  { src: hero, alt: "Coliseu de Roma ao entardecer", label: "Roma" },
   { src: trevi, alt: "Fontana di Trevi iluminada à noite", label: "Trevi" },
   { src: vatican, alt: "Cúpula do Vaticano", label: "Vaticano" },
   { src: florence, alt: "Duomo de Florença ao pôr do sol", label: "Firenze" },
   { src: venice, alt: "Grande Canal de Veneza", label: "Venezia" },
-  { src: tuscany, alt: "Colinas da Toscana com cipestres", label: "Toscana" },
+  { src: tuscany, alt: "Colinas da Toscana com ciprestes", label: "Toscana" },
   { src: tours, alt: "Vila de Positano ao entardecer", label: "Positano" },
   { src: pompeii, alt: "Ruínas de Pompeia com Vesúvio", label: "Pompei" },
   { src: interior, alt: "Interior de van executiva", label: "Frota" },
-  { src: transfer, alt: "Chauffeur profissional no aeroporto", label: "Transfer" },
+  { src: transfer, alt: "Chauffeur profissional recebendo passageiro em Roma", label: "Transfer" },
 ];
 
 function GalleryPage() {
