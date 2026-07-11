@@ -45,7 +45,7 @@ function TransfersPage() {
       <PageHero
         eyebrow="Transfers Privati"
         title={<>Elegância <span className="italic text-gold">em cada trajeto</span>.</>}
-        subtitle="Frota Mercedes-Benz, motoristas licenciados e pontualidade absoluta em toda a Itália."
+        subtitle="Frota premium, motoristas licenciados e pontualidade absoluta em toda a Itália."
         image={transferImg}
       />
 
@@ -99,7 +99,7 @@ function TransfersPage() {
             <ul className="mt-10 space-y-4">
               {[
                 "Motorista profissional licenciado NCC",
-                "Frota Mercedes-Benz revisada e segurada",
+                "Frota premium revisada e segurada",
                 "Água mineral e wi-fi a bordo",
                 "Meet & greet com placa personalizada",
                 "Monitoramento de voos em tempo real",

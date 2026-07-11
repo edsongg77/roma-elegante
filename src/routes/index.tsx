@@ -20,7 +20,7 @@ const highlights = [
 const services = [
   { title: "Transfers Privados", text: "Aeroportos, portos, estações e hotéis com pontualidade suíça.", img: transferImg, to: "/transfers" as const },
   { title: "Tours Exclusivos", text: "Passeios sob medida por Roma, Toscana, Amalfi e além.", img: toursImg, to: "/tours" as const },
-  { title: "Frota Premium", text: "Mercedes-Benz classe executiva e vans de luxo.", img: interiorImg, to: "/transfers" as const },
+  { title: "Frota Premium", text: "Veículos executivos e vans de luxo, sempre revisados.", img: interiorImg, to: "/transfers" as const },
 ];
 
 function HomePage() {
@@ -30,7 +30,7 @@ function HomePage() {
       <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Mercedes preto em frente ao Coliseu de Roma ao entardecer"
+          alt="Carro executivo preto em frente ao Coliseu de Roma ao entardecer"
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
@@ -131,7 +131,7 @@ function HomePage() {
             <div className="absolute -left-4 -top-4 h-full w-full border border-gold/30" />
             <img
               src={interiorImg}
-              alt="Interior de um Mercedes V-Class de luxo"
+              alt="Interior de van executiva de luxo"
               width={1600}
               height={1000}
               loading="lazy"
