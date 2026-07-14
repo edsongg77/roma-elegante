@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import logoRT from "@/assets/logo-rt.png";
 
 export function SiteFooter() {
   return (
@@ -8,9 +9,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/40 font-display text-lg text-gold">
-                RT
-              </span>
+              <img src={logoRT} alt="Tours Roma Italia" width={40} height={40} loading="lazy" className="h-10 w-10 object-contain" />
               <span className="font-display text-xl">Tours Roma Italia</span>
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
