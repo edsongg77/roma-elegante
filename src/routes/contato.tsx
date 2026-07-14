@@ -44,7 +44,7 @@ function ContactPage() {
               {[
                 { icon: MessageCircle, label: "WhatsApp", value: "+39 339 741 0650", href: WHATSAPP },
                 { icon: Phone, label: "Telefone", value: "+39 339 741 0650", href: "tel:+393397410650" },
-                { icon: Mail, label: "E-mail", value: "info@toursromaitalia.com", href: "mailto:info@toursromaitalia.com" },
+                { icon: Mail, label: "E-mail", value: "giuliadgdsilva@gmail.com", href: "mailto:giuliadgdsilva@gmail.com" },
               ].map((c) => {
                 const Wrap = c.href ? "a" : "div";
                 return (
