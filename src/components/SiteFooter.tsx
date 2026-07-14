@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/40 font-display text-lg text-gold">
-                TRT
+                RT
               </span>
               <span className="font-display text-xl">Tours Roma Italia</span>
             </div>
