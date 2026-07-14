@@ -45,7 +45,6 @@ function ContactPage() {
                 { icon: MessageCircle, label: "WhatsApp", value: "+39 339 741 0650", href: WHATSAPP },
                 { icon: Phone, label: "Telefone", value: "+39 339 741 0650", href: "tel:+393397410650" },
                 { icon: Mail, label: "E-mail", value: "info@toursromaitalia.com", href: "mailto:info@toursromaitalia.com" },
-                { icon: MapPin, label: "Endereço", value: "Via del Corso, 00186 Roma RM, Itália" },
               ].map((c) => {
                 const Wrap = c.href ? "a" : "div";
                 return (
