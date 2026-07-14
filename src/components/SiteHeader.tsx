@@ -35,7 +35,7 @@ export function SiteHeader() {
       <div className="container-x flex h-20 items-center justify-between">
         <Link to="/" className="group flex items-center gap-3">
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-gold/40 font-display text-lg text-gold transition-colors group-hover:bg-gold group-hover:text-primary-foreground">
-            T
+            TRT
           </span>
           <span className="flex min-w-0 flex-col leading-tight">
             <span className="font-display text-base tracking-wide text-foreground sm:text-lg">
