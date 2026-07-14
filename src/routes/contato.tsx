@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageHero } from "@/components/PageHero";
 import interior from "@/assets/interior.jpg";
-import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import { Phone, Mail, MessageCircle, Send } from "lucide-react";
 import { WHATSAPP } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/contato")({
