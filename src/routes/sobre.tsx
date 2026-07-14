@@ -95,10 +95,9 @@ function AboutPage() {
 
       <section className="py-24 md:py-32">
         <div className="container-x">
-          <div className="grid gap-12 md:grid-cols-4">
+          <div className="grid gap-12 md:grid-cols-3">
             {[
               { n: "10+", l: "Anos de experiência" },
-              { n: "5.000+", l: "Viajantes atendidos" },
               { n: "20+", l: "Cidades atendidas" },
               { n: "4", l: "Idiomas fluentes" },
             ].map((s) => (
