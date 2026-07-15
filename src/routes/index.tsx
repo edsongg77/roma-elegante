@@ -1,5 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Clock, UserCheck, Languages, MapPin, ArrowRight, Star, Shield, Sparkles } from "lucide-react";
+import {
+  Clock,
+  UserCheck,
+  Languages,
+  MapPin,
+  ArrowRight,
+  Star,
+  Shield,
+  Sparkles,
+} from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import transferImg from "@/assets/transfer.jpg";
 import toursImg from "@/assets/tours.jpg";
@@ -11,16 +20,43 @@ export const Route = createFileRoute("/")({
 });
 
 const highlights = [
-  { icon: Clock, title: "10+ anos", text: "Uma década de excelência em transporte privado pela Itália." },
-  { icon: UserCheck, title: "Motoristas Profissionais", text: "Chauffeurs certificados, discretos e pontuais." },
+  {
+    icon: Clock,
+    title: "10+ anos",
+    text: "Uma década de excelência em transporte privado pela Itália.",
+  },
+  {
+    icon: UserCheck,
+    title: "Motoristas Profissionais",
+    text: "Chauffeurs certificados, discretos e pontuais.",
+  },
   { icon: Languages, title: "4 Idiomas", text: "Português, Italiano, Inglês e Espanhol." },
-  { icon: MapPin, title: "Toda a Itália", text: "Roma e as principais cidades e destinos italianos." },
+  {
+    icon: MapPin,
+    title: "Toda a Itália",
+    text: "Roma e as principais cidades e destinos italianos.",
+  },
 ];
 
 const services = [
-  { title: "Transfers Privados", text: "Aeroportos, portos, estações e hotéis com pontualidade suíça.", img: transferImg, to: "/transfers" as const },
-  { title: "Tours Exclusivos", text: "Passeios sob medida por Roma, Toscana, Amalfi e além.", img: toursImg, to: "/tours" as const },
-  { title: "Frota Premium", text: "Veículos executivos e vans de luxo, sempre revisados.", img: interiorImg, to: "/transfers" as const },
+  {
+    title: "Transfers Privados",
+    text: "Aeroportos, portos, estações e hotéis com pontualidade suíça.",
+    img: transferImg,
+    to: "/transfers" as const,
+  },
+  {
+    title: "Tours Exclusivos",
+    text: "Passeios sob medida por Roma, Toscana, Amalfi e além.",
+    img: toursImg,
+    to: "/tours" as const,
+  },
+  {
+    title: "Frota Premium",
+    text: "Veículos executivos e vans de luxo, sempre revisados.",
+    img: interiorImg,
+    to: "/transfers" as const,
+  },
 ];
 
 function HomePage() {
@@ -49,8 +85,8 @@ function HomePage() {
               <span className="italic text-gold">à sua maneira.</span>
             </h1>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground animate-fade-up sm:text-lg">
-              Transfers privados e tours exclusivos com motorista particular.
-              Elegância, conforto e pontualidade em cada quilômetro.
+              Transfers privados e tours exclusivos com motorista particular. Elegância, conforto e
+              pontualidade em cada quilômetro.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up">
               <a
@@ -101,10 +137,9 @@ function HomePage() {
               <span className="italic text-gold">de quem viaja bem.</span>
             </h2>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              A Tours Roma Italia nasceu do amor pela Itália e da certeza de que
-              cada detalhe importa. Somos motoristas, guias e planejadores,
-              dedicados a transformar deslocamentos em momentos memoráveis para
-              famílias, executivos e viajantes exigentes.
+              A Tours Roma Italia nasceu do amor pela Itália e da certeza de que cada detalhe
+              importa. Somos motoristas, guias e planejadores, dedicados a transformar deslocamentos
+              em momentos memoráveis para famílias, executivos e viajantes exigentes.
             </p>
             <div className="mt-10 grid grid-cols-3 gap-6 border-t border-border pt-8">
               <div>
@@ -113,11 +148,15 @@ function HomePage() {
               </div>
               <div>
                 <p className="font-display text-3xl text-gold">4</p>
-                <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">Idiomas</p>
+                <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">
+                  Idiomas
+                </p>
               </div>
               <div>
                 <p className="font-display text-3xl text-gold">24/7</p>
-                <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">Suporte</p>
+                <p className="mt-1 text-xs tracking-wide uppercase text-muted-foreground">
+                  Suporte
+                </p>
               </div>
             </div>
             <Link
@@ -152,8 +191,8 @@ function HomePage() {
               </h2>
             </div>
             <p className="max-w-sm text-sm text-muted-foreground">
-              Do primeiro contato ao último quilômetro, cada detalhe é planejado
-              para oferecer conforto, discrição e pontualidade absoluta.
+              Do primeiro contato ao último quilômetro, cada detalhe é planejado para oferecer
+              conforto, discrição e pontualidade absoluta.
             </p>
           </div>
 
@@ -177,7 +216,8 @@ function HomePage() {
                   <h3 className="font-display text-2xl">{s.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{s.text}</p>
                   <span className="mt-6 inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gold">
-                    Descobrir <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                    Descobrir{" "}
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
               </Link>
@@ -197,9 +237,21 @@ function HomePage() {
           </div>
           <div className="mt-16 grid gap-10 md:grid-cols-3">
             {[
-              { icon: Shield, title: "Segurança absoluta", text: "Frota moderna, segurada e revisada. Motoristas licenciados NCC." },
-              { icon: Sparkles, title: "Experiência premium", text: "Água mineral, wi-fi a bordo, assentos de couro e clima personalizado." },
-              { icon: Star, title: "Atenção aos detalhes", text: "Meet & greet, monitoramento de voos e flexibilidade total no roteiro." },
+              {
+                icon: Shield,
+                title: "Segurança absoluta",
+                text: "Frota moderna, segurada e revisada. Motoristas licenciados NCC.",
+              },
+              {
+                icon: Sparkles,
+                title: "Experiência premium",
+                text: "Água mineral, wi-fi a bordo, assentos de couro e clima personalizado.",
+              },
+              {
+                icon: Star,
+                title: "Atenção aos detalhes",
+                text: "Meet & greet, monitoramento de voos e flexibilidade total no roteiro.",
+              },
             ].map((v) => (
               <div key={v.title} className="text-center">
                 <div className="mx-auto grid h-14 w-14 place-items-center rounded-full border border-gold/40 text-gold">
@@ -229,8 +281,7 @@ function HomePage() {
               Vamos planejar sua <span className="italic text-gold">próxima viagem</span>.
             </h2>
             <p className="mt-6 max-w-lg text-base text-muted-foreground">
-              Solicite um orçamento personalizado pelo WhatsApp e receba uma
-              proposta em minutos.
+              Solicite um orçamento personalizado pelo WhatsApp e receba uma proposta em minutos.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a

@@ -1,31 +1,81 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/PageHero";
 import transferImg from "@/assets/transfer.jpg";
-import { Plane, Hotel, Ship, TrainFront, Route as RouteIcon, Car, ArrowRight, Check, Moon, Users2 } from "lucide-react";
+import {
+  Plane,
+  Hotel,
+  Ship,
+  TrainFront,
+  Route as RouteIcon,
+  Car,
+  ArrowRight,
+  Check,
+  Moon,
+  Users2,
+} from "lucide-react";
 import { WHATSAPP } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/transfers")({
   head: () => ({
     meta: [
       { title: "Transfers Privados — Tours Roma Italia" },
-      { name: "description", content: "Transfers privados aeroporto, porto, estação e entre cidades italianas: Roma, Florença, Pisa, Siena, Nápoles, Positano, Amalfi e Pompeia." },
+      {
+        name: "description",
+        content:
+          "Transfers privados aeroporto, porto, estação e entre cidades italianas: Roma, Florença, Pisa, Siena, Nápoles, Positano, Amalfi e Pompeia.",
+      },
       { property: "og:title", content: "Transfers Privados na Itália — Tours Roma Italia" },
-      { property: "og:description", content: "Motorista particular por diária e transfers entre as principais cidades da Itália." },
+      {
+        property: "og:description",
+        content:
+          "Motorista particular por diária e transfers entre as principais cidades da Itália.",
+      },
     ],
   }),
   component: TransfersPage,
 });
 
 const services = [
-  { icon: Plane, title: "Aeroporto → Hotel", text: "Recepção com placa no desembarque e traslado direto ao seu hotel." },
-  { icon: Hotel, title: "Hotel → Aeroporto", text: "Partida pontual com monitoramento do seu voo em tempo real." },
-  { icon: Ship, title: "Porto → Hotel", text: "Transfers de e para os principais portos de cruzeiro italianos." },
-  { icon: TrainFront, title: "Estação → Hotel", text: "Encontre-se com seu motorista já na plataforma da estação." },
-  { icon: RouteIcon, title: "Entre Cidades", text: "Roma, Florença, Pisa, Siena, Nápoles, Positano, Amalfi e Pompeia." },
-  { icon: Car, title: "Motorista por Diária", text: "Chauffeur exclusivo à disposição por dia ou meio dia." },
-  { icon: Moon, title: "Roma by Night", text: "Roma iluminada em um tour noturno privado inesquecível." },
-  { icon: Users2, title: "Eventos & Ocasiões", text: "Motorista particular para casamentos, reuniões e eventos especiais." },
-
+  {
+    icon: Plane,
+    title: "Aeroporto → Hotel",
+    text: "Recepção com placa no desembarque e traslado direto ao seu hotel.",
+  },
+  {
+    icon: Hotel,
+    title: "Hotel → Aeroporto",
+    text: "Partida pontual com monitoramento do seu voo em tempo real.",
+  },
+  {
+    icon: Ship,
+    title: "Porto → Hotel",
+    text: "Transfers de e para os principais portos de cruzeiro italianos.",
+  },
+  {
+    icon: TrainFront,
+    title: "Estação → Hotel",
+    text: "Encontre-se com seu motorista já na plataforma da estação.",
+  },
+  {
+    icon: RouteIcon,
+    title: "Entre Cidades",
+    text: "Roma, Florença, Pisa, Siena, Nápoles, Positano, Amalfi e Pompeia.",
+  },
+  {
+    icon: Car,
+    title: "Motorista por Diária",
+    text: "Chauffeur exclusivo à disposição por dia ou meio dia.",
+  },
+  {
+    icon: Moon,
+    title: "Roma by Night",
+    text: "Roma iluminada em um tour noturno privado inesquecível.",
+  },
+  {
+    icon: Users2,
+    title: "Eventos & Ocasiões",
+    text: "Motorista particular para casamentos, reuniões e eventos especiais.",
+  },
 ];
 
 const routes = [
@@ -44,7 +94,11 @@ function TransfersPage() {
     <>
       <PageHero
         eyebrow="Transfers Privati"
-        title={<>Elegância <span className="italic text-gold">em cada trajeto</span>.</>}
+        title={
+          <>
+            Elegância <span className="italic text-gold">em cada trajeto</span>.
+          </>
+        }
         subtitle="Frota premium, motoristas licenciados e pontualidade absoluta em toda a Itália."
         image={transferImg}
       />
@@ -53,7 +107,10 @@ function TransfersPage() {
         <div className="container-x">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
-              <div key={s.title} className="group border border-border bg-card p-8 transition-colors hover:border-gold">
+              <div
+                key={s.title}
+                className="group border border-border bg-card p-8 transition-colors hover:border-gold"
+              >
                 <s.icon className="h-8 w-8 text-gold" strokeWidth={1.2} />
                 <h3 className="mt-6 font-display text-2xl">{s.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
@@ -118,8 +175,8 @@ function TransfersPage() {
             <span className="eyebrow">Preventivo</span>
             <h3 className="mt-4 font-display text-3xl">Solicite seu orçamento</h3>
             <p className="mt-4 text-sm text-muted-foreground">
-              Envie os detalhes do seu trajeto pelo WhatsApp e receba uma
-              proposta personalizada em minutos.
+              Envie os detalhes do seu trajeto pelo WhatsApp e receba uma proposta personalizada em
+              minutos.
             </p>
             <a
               href={WHATSAPP}

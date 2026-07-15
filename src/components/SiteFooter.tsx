@@ -9,12 +9,19 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img src={logoRT} alt="Tours Roma Italia" width={40} height={40} loading="lazy" className="h-10 w-10 object-contain" />
+              <img
+                src={logoRT}
+                alt="Tours Roma Italia"
+                width={40}
+                height={40}
+                loading="lazy"
+                className="h-10 w-10 object-contain"
+              />
               <span className="font-display text-xl">Tours Roma Italia</span>
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Transfers privados e tours exclusivos pela Itália. Mais de uma década
-              transformando deslocamentos em experiências memoráveis.
+              Transfers privados e tours exclusivos pela Itália. Mais de uma década transformando
+              deslocamentos em experiências memoráveis.
             </p>
             <p className="mt-6 font-display text-2xl italic text-gold">Grazie Mille!</p>
 
@@ -39,12 +46,36 @@ export function SiteFooter() {
           <div>
             <h4 className="eyebrow">Navegação</h4>
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-              <li><Link to="/" className="hover:text-gold">Início</Link></li>
-              <li><Link to="/sobre" className="hover:text-gold">Sobre</Link></li>
-              <li><Link to="/transfers" className="hover:text-gold">Transfers</Link></li>
-              <li><Link to="/tours" className="hover:text-gold">Tours</Link></li>
-              <li><Link to="/galeria" className="hover:text-gold">Galeria</Link></li>
-              <li><Link to="/contato" className="hover:text-gold">Contato</Link></li>
+              <li>
+                <Link to="/" className="hover:text-gold">
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link to="/sobre" className="hover:text-gold">
+                  Sobre
+                </Link>
+              </li>
+              <li>
+                <Link to="/transfers" className="hover:text-gold">
+                  Transfers
+                </Link>
+              </li>
+              <li>
+                <Link to="/tours" className="hover:text-gold">
+                  Tours
+                </Link>
+              </li>
+              <li>
+                <Link to="/galeria" className="hover:text-gold">
+                  Galeria
+                </Link>
+              </li>
+              <li>
+                <Link to="/contato" className="hover:text-gold">
+                  Contato
+                </Link>
+              </li>
             </ul>
           </div>
 
