@@ -85,14 +85,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Transfers privados com motorista particular e tours exclusivos por Roma, Florença, Amalfi, Pompeia e toda a Itália. Mais de 10 anos de experiência.",
       },
       { name: "author", content: "Tours Roma Italia" },
-      { property: "og:title", content: "Tours Roma Italia — Transfers & Tours Privados na Itália" },
+      { property: "og:title", content: "Tours Roma Italia — Transfers Privados e Tours de Luxo na Itália" },
       {
         property: "og:description",
         content:
-          "Motorista particular, conforto e elegância em Roma e por toda a Itália. Atendimento em Português, Italiano, Inglês e Espanhol.",
+          "Transfers privados com motorista particular e tours exclusivos por Roma, Florença, Amalfi, Pompeia e toda a Itália. Mais de 10 anos de experiência.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Tours Roma Italia — Transfers Privados e Tours de Luxo na Itália" },
+      { name: "twitter:description", content: "Transfers privados com motorista particular e tours exclusivos por Roma, Florença, Amalfi, Pompeia e toda a Itália. Mais de 10 anos de experiência." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/afe931f6-7db6-4519-8526-e4fc60b966f4/id-preview-66b0c419--09e29ac9-a31a-45ee-bab6-7ab92b7b982f.lovable.app-1784070511428.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/afe931f6-7db6-4519-8526-e4fc60b966f4/id-preview-66b0c419--09e29ac9-a31a-45ee-bab6-7ab92b7b982f.lovable.app-1784070511428.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
