@@ -9,9 +9,16 @@ export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
       { title: "Contato — Tours Roma Italia" },
-      { name: "description", content: "Entre em contato com a Tours Roma Italia. Telefone, WhatsApp, e-mail e formulário de contato." },
+      {
+        name: "description",
+        content:
+          "Entre em contato com a Tours Roma Italia. Telefone, WhatsApp, e-mail e formulário de contato.",
+      },
       { property: "og:title", content: "Contato — Tours Roma Italia" },
-      { property: "og:description", content: "Fale conosco e planeje sua próxima experiência pela Itália." },
+      {
+        property: "og:description",
+        content: "Fale conosco e planeje sua próxima experiência pela Itália.",
+      },
     ],
   }),
   component: ContactPage,
@@ -24,7 +31,11 @@ function ContactPage() {
     <>
       <PageHero
         eyebrow="Contatti"
-        title={<>Fale <span className="italic text-gold">conosco</span>.</>}
+        title={
+          <>
+            Fale <span className="italic text-gold">conosco</span>.
+          </>
+        }
         subtitle="Estamos disponíveis 24 horas por dia, em quatro idiomas, para planejar sua próxima viagem."
         image={interior}
       />
@@ -36,15 +47,29 @@ function ContactPage() {
             <span className="eyebrow">Informazioni</span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl">Como nos encontrar</h2>
             <p className="mt-6 text-muted-foreground">
-              Prefere falar diretamente? Estamos a um clique de distância nos
-              canais abaixo.
+              Prefere falar diretamente? Estamos a um clique de distância nos canais abaixo.
             </p>
 
             <div className="mt-12 space-y-6">
               {[
-                { icon: MessageCircle, label: "WhatsApp", value: "+39 339 741 0650", href: WHATSAPP },
-                { icon: Phone, label: "Telefone", value: "+39 339 741 0650", href: "tel:+393397410650" },
-                { icon: Mail, label: "E-mail", value: "giuliadgdsilva@gmail.com", href: "mailto:giuliadgdsilva@gmail.com" },
+                {
+                  icon: MessageCircle,
+                  label: "WhatsApp",
+                  value: "+39 339 741 0650",
+                  href: WHATSAPP,
+                },
+                {
+                  icon: Phone,
+                  label: "Telefone",
+                  value: "+39 339 741 0650",
+                  href: "tel:+393397410650",
+                },
+                {
+                  icon: Mail,
+                  label: "E-mail",
+                  value: "giuliadgdsilva@gmail.com",
+                  href: "mailto:giuliadgdsilva@gmail.com",
+                },
               ].map((c) => {
                 const Wrap = c.href ? "a" : "div";
                 return (

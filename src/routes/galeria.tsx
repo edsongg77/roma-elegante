@@ -15,9 +15,15 @@ export const Route = createFileRoute("/galeria")({
   head: () => ({
     meta: [
       { title: "Galeria — Tours Roma Italia" },
-      { name: "description", content: "Momentos capturados em nossos transfers e tours pela Itália." },
+      {
+        name: "description",
+        content: "Momentos capturados em nossos transfers e tours pela Itália.",
+      },
       { property: "og:title", content: "Galeria — Tours Roma Italia" },
-      { property: "og:description", content: "Imagens dos nossos passeios e serviços pela Itália." },
+      {
+        property: "og:description",
+        content: "Imagens dos nossos passeios e serviços pela Itália.",
+      },
     ],
   }),
   component: GalleryPage,
@@ -41,7 +47,11 @@ function GalleryPage() {
     <>
       <PageHero
         eyebrow="Galleria"
-        title={<>Momentos capturados <span className="italic text-gold">pela Itália</span>.</>}
+        title={
+          <>
+            Momentos capturados <span className="italic text-gold">pela Itália</span>.
+          </>
+        }
         subtitle="Uma seleção dos destinos, cenários e detalhes que fazem parte da nossa rotina."
         image={venice}
       />

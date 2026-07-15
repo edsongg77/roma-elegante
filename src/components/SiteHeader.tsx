@@ -12,7 +12,8 @@ const nav = [
   { to: "/contato", label: "Contato" },
 ] as const;
 
-const WHATSAPP = "https://wa.me/393397410650?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento.";
+const WHATSAPP =
+  "https://wa.me/393397410650?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento.";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,7 +36,13 @@ export function SiteHeader() {
     >
       <div className="container-x flex h-20 items-center justify-between">
         <Link to="/" className="group flex items-center gap-3">
-          <img src={logoRT} alt="Tours Roma Italia" width={40} height={40} className="h-10 w-10 shrink-0 object-contain" />
+          <img
+            src={logoRT}
+            alt="Tours Roma Italia"
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0 object-contain"
+          />
           <span className="flex min-w-0 flex-col leading-tight">
             <span className="font-display text-base tracking-wide text-foreground sm:text-lg">
               Tours Roma Italia
