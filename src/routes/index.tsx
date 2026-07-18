@@ -184,30 +184,116 @@ function HomePage() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-3">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <Link
                 key={s.title}
                 to={s.to}
-                className="group relative block overflow-hidden border border-border bg-card"
+                className="group relative block overflow-hidden border border-border bg-card p-8 transition-colors hover:border-gold"
               >
-                <div className="aspect-[4/5] overflow-hidden">
-                  <img
-                    src={s.img}
-                    alt={s.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="font-display text-2xl">{s.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{s.text}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gold">
-                    Descobrir <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </div>
+                <s.icon className="h-8 w-8 text-gold" strokeWidth={1.2} />
+                <h3 className="mt-6 font-display text-2xl">{s.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
+                <span className="mt-6 inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gold">
+                  Saiba mais <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                </span>
               </Link>
+            ))}
+          </div>
+
+          {/* Featured service imagery */}
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {featuredServiceImgs.map((img, i) => (
+              <div key={i} className="relative aspect-[4/3] overflow-hidden border border-border">
+                <img src={img} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CRUISES — CIVITAVECCHIA */}
+      <section className="relative overflow-hidden border-t border-border">
+        <img src={toursImg} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
+        <div className="container-x relative grid gap-16 py-24 md:grid-cols-2 md:items-center md:py-32">
+          <div>
+            <span className="eyebrow">Crociere · Civitavecchia</span>
+            <h2 className="mt-4 font-display text-4xl leading-tight md:text-5xl">
+              Cruzeiros no <span className="italic text-gold">Porto de Roma</span>.
+            </h2>
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">
+              Recebemos turistas no Porto de Civitavecchia (Porto de Roma),
+              realizamos passeios personalizados por Roma durante o dia e
+              retornamos ao porto no horário de embarque — com conforto,
+              pontualidade e uma experiência inesquecível.
+            </p>
+            <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
+              {[
+                "Recepção do navio com placa personalizada",
+                "Roteiro flexível ajustado ao tempo em terra",
+                "Retorno pontual ao horário de reembarque",
+                "Motorista/anfitrião em quatro idiomas",
+              ].map((i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <Ship className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                  <span>{i}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-10 inline-flex items-center gap-3 bg-gradient-to-br from-gold to-gold-deep px-8 py-4 text-xs font-medium tracking-[0.24em] uppercase text-primary-foreground"
+            >
+              Reservar experiência <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+          <div className="relative">
+            <div className="absolute -right-4 -top-4 h-full w-full border border-gold/30" />
+            <img
+              src={toursImg}
+              alt="Costa italiana vista de um cruzeiro no Mediterrâneo"
+              loading="lazy"
+              className="relative h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CITIES */}
+      <section className="border-t border-border bg-[oklch(0.04_0_0)] py-24 md:py-32">
+        <div className="container-x">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">Destinazioni</span>
+            <h2 className="mt-4 font-display text-4xl md:text-5xl">
+              Muito além de Roma <span className="italic text-gold">— toda a Itália</span>.
+            </h2>
+            <p className="mt-6 text-sm text-muted-foreground">
+              Operamos em Roma e nas principais cidades italianas, com roteiros
+              personalizados e transporte privado porta a porta.
+            </p>
+          </div>
+
+          <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {cities.map((c) => (
+              <div key={c.name} className="group relative aspect-[4/5] overflow-hidden border border-border bg-card">
+                <img
+                  src={c.img}
+                  alt={c.name}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-5">
+                  <div className="flex items-center gap-2 text-gold">
+                    <MapPin className="h-3.5 w-3.5" />
+                    <span className="eyebrow text-[0.6rem]">Italia</span>
+                  </div>
+                  <p className="mt-2 font-display text-xl text-foreground">{c.name}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
