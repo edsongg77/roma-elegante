@@ -13,9 +13,9 @@ import { WHATSAPP } from "@/components/SiteHeader";
 export const Route = createFileRoute("/tours")({
   head: () => ({
     meta: [
-      { title: "Tours Privados na Itália — Tours Roma Italia" },
+      { title: "Tours Privados na Itália — DSC Italy Tours" },
       { name: "description", content: "Passeios privados por Roma, Vaticano, Toscana, Amalfi, Pompeia, Florença e Veneza. Guias e motoristas exclusivos." },
-      { property: "og:title", content: "Tours Privados na Itália — Tours Roma Italia" },
+      { property: "og:title", content: "Tours Privados na Itália — DSC Italy Tours" },
       { property: "og:description", content: "Roteiros exclusivos por Roma e principais destinos da Itália, com motorista particular." },
     ],
   }),

@@ -7,9 +7,9 @@ import { WHATSAPP } from "@/components/SiteHeader";
 export const Route = createFileRoute("/transfers")({
   head: () => ({
     meta: [
-      { title: "Transfers Privados — Tours Roma Italia" },
+      { title: "Transfers Privados — DSC Italy Tours" },
       { name: "description", content: "Transfers privados aeroporto, porto, estação e entre cidades italianas: Roma, Florença, Pisa, Siena, Nápoles, Positano, Amalfi e Pompeia." },
-      { property: "og:title", content: "Transfers Privados na Itália — Tours Roma Italia" },
+      { property: "og:title", content: "Transfers Privados na Itália — DSC Italy Tours" },
       { property: "og:description", content: "Motorista particular por diária e transfers entre as principais cidades da Itália." },
     ],
   }),

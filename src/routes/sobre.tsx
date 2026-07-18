@@ -7,9 +7,9 @@ import { Award, Heart, Users, Globe, Car, MapPin, Moon, CalendarDays, Route as R
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre — Tours Roma Italia" },
-      { name: "description", content: "Conheça a história da Tours Roma Italia: mais de 10 anos oferecendo transfers privados e tours de luxo pela Itália." },
-      { property: "og:title", content: "Sobre — Tours Roma Italia" },
+      { title: "Sobre — DSC Italy Tours" },
+      { name: "description", content: "Conheça a história da DSC Italy Tours: mais de 10 anos oferecendo transfers privados e tours de luxo pela Itália." },
+      { property: "og:title", content: "Sobre — DSC Italy Tours" },
       { property: "og:description", content: "Uma década de excelência em transporte privado e tours exclusivos." },
     ],
   }),
@@ -33,7 +33,7 @@ function AboutPage() {
             <h2 className="mt-4 font-display text-4xl md:text-5xl">Nossa história</h2>
             <div className="mt-8 space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
-                A Tours Roma Italia surgiu através da paixão e da admiração
+                A DSC Italy Tours surgiu através da paixão e da admiração
                 por trabalhar oferecendo serviços de qualidade e conforto a
                 pessoas de outros países que desejam conhecer o nosso país.
               </p>

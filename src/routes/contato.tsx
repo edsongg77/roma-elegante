@@ -8,9 +8,9 @@ import { WHATSAPP } from "@/components/SiteHeader";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato — Tours Roma Italia" },
-      { name: "description", content: "Entre em contato com a Tours Roma Italia. Telefone, WhatsApp, e-mail e formulário de contato." },
-      { property: "og:title", content: "Contato — Tours Roma Italia" },
+      { title: "Contato — DSC Italy Tours" },
+      { name: "description", content: "Entre em contato com a DSC Italy Tours. Telefone, WhatsApp, e-mail e formulário de contato." },
+      { property: "og:title", content: "Contato — DSC Italy Tours" },
       { property: "og:description", content: "Fale conosco e planeje sua próxima experiência pela Itália." },
     ],
   }),
