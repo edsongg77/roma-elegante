@@ -26,13 +26,6 @@ export function SiteFooter() {
               >
                 <Instagram className="h-4 w-4" />
               </a>
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="grid h-10 w-10 place-items-center border border-border text-muted-foreground transition-colors hover:border-gold hover:text-gold"
-              >
-                <Facebook className="h-4 w-4" />
-              </a>
             </div>
           </div>
 
