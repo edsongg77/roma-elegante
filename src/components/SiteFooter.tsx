@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 import logoRT from "@/assets/logo-rt.png";
 
 export function SiteFooter() {
