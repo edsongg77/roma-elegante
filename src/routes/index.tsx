@@ -75,8 +75,9 @@ function HomePage() {
               <span className="italic text-gold">à sua maneira.</span>
             </h1>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground animate-fade-up sm:text-lg">
-              Transfers privados e tours exclusivos com motorista particular.
-              Elegância, conforto e pontualidade em cada quilômetro.
+              Muito mais do que transfers: transfers privados, city tours, excursões
+              de um dia, roteiros personalizados e recepção de cruzeiros no Porto de
+              Civitavecchia. Uma experiência completa pela Itália.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up">
               <a
