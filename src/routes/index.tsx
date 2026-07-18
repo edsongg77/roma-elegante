@@ -1,9 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Clock, UserCheck, Languages, MapPin, ArrowRight, Star, Shield, Sparkles } from "lucide-react";
+import { Clock, UserCheck, Languages, MapPin, ArrowRight, Star, Shield, Sparkles, Ship, Plane, Building2, Route as RouteIcon, Camera, Sun } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import transferImg from "@/assets/transfer.jpg";
 import toursImg from "@/assets/tours.jpg";
 import interiorImg from "@/assets/interior.jpg";
+import trevi from "@/assets/trevi.jpg";
+import florence from "@/assets/florence.jpg";
+import venice from "@/assets/venice.jpg";
+import tuscany from "@/assets/tuscany.jpg";
+import vatican from "@/assets/vatican.jpg";
+import pompeii from "@/assets/pompeii.jpg";
 import { WHATSAPP } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/")({
@@ -11,16 +17,36 @@ export const Route = createFileRoute("/")({
 });
 
 const highlights = [
-  { icon: Clock, title: "10+ anos", text: "Uma década de excelência em transporte privado pela Itália." },
-  { icon: UserCheck, title: "Motoristas Profissionais", text: "Chauffeurs certificados, discretos e pontuais." },
+  { icon: Clock, title: "10+ anos", text: "Uma década de excelência em turismo privado pela Itália." },
+  { icon: UserCheck, title: "Motoristas & Guias", text: "Chauffeurs certificados e anfitriões locais dedicados." },
   { icon: Languages, title: "4 Idiomas", text: "Português, Italiano, Inglês e Espanhol." },
   { icon: MapPin, title: "Toda a Itália", text: "Roma e as principais cidades e destinos italianos." },
 ];
 
 const services = [
-  { title: "Transfers Privados", text: "Aeroportos, portos, estações e hotéis com pontualidade suíça.", img: transferImg, to: "/transfers" as const },
-  { title: "Tours Exclusivos", text: "Passeios sob medida por Roma, Toscana, Amalfi e além.", img: toursImg, to: "/tours" as const },
-  { title: "Frota Premium", text: "Veículos executivos e vans de luxo, sempre revisados.", img: interiorImg, to: "/transfers" as const },
+  { icon: RouteIcon, title: "Transfers Privados", text: "Aeroportos, portos, estações e hotéis com pontualidade absoluta.", to: "/transfers" as const },
+  { icon: Camera, title: "Passeios Personalizados", text: "Roteiros turísticos sob medida, no seu ritmo e estilo.", to: "/tours" as const },
+  { icon: Building2, title: "City Tours", text: "Descubra Roma e outras cidades italianas com um anfitrião local.", to: "/tours" as const },
+  { icon: Sun, title: "Excursões de um Dia", text: "Day tours para Toscana, Amalfi, Pompeia, Tivoli, Orvieto e mais.", to: "/tours" as const },
+  { icon: Ship, title: "Cruzeiros — Civitavecchia", text: "Recepção no porto, passeio em Roma e retorno pontual ao embarque.", to: "/tours" as const },
+  { icon: Plane, title: "Roteiros Personalizados", text: "Planejamos sua viagem do início ao fim, do transporte às experiências.", to: "/tours" as const },
+];
+
+const featuredServiceImgs = [transferImg, toursImg, interiorImg] as const;
+
+const cities = [
+  { name: "Roma", img: heroImg },
+  { name: "Florença", img: florence },
+  { name: "Veneza", img: venice },
+  { name: "Nápoles", img: pompeii },
+  { name: "Positano", img: toursImg },
+  { name: "Costa Amalfitana", img: toursImg },
+  { name: "Pompeia", img: pompeii },
+  { name: "Pisa", img: florence },
+  { name: "Siena", img: tuscany },
+  { name: "Tivoli", img: trevi },
+  { name: "Orvieto", img: tuscany },
+  { name: "Vaticano", img: vatican },
 ];
 
 function HomePage() {
