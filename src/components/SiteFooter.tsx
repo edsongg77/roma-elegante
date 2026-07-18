@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 import logoRT from "@/assets/logo-rt.png";
 
 export function SiteFooter() {
@@ -26,13 +26,6 @@ export function SiteFooter() {
               >
                 <Instagram className="h-4 w-4" />
               </a>
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="grid h-10 w-10 place-items-center border border-border text-muted-foreground transition-colors hover:border-gold hover:text-gold"
-              >
-                <Facebook className="h-4 w-4" />
-              </a>
             </div>
           </div>
 
@@ -58,10 +51,6 @@ export function SiteFooter() {
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <span>giuliadgdsilva@gmail.com</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>Via del Corso, Roma — Itália</span>
               </li>
             </ul>
           </div>
