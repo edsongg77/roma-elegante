@@ -11,10 +11,17 @@ import tuscany from "@/assets/tuscany.jpg";
 import vatican from "@/assets/vatican.jpg";
 import pompeii from "@/assets/pompeii.jpg";
 import { WHATSAPP } from "@/components/SiteHeader";
+import { HeroSlider } from "@/components/HeroSlider";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
 });
+
+const heroSlides = [
+  { src: heroImg, alt: "Coliseu de Roma ao entardecer" },
+  { src: trevi, alt: "Fontana di Trevi iluminada à noite" },
+  { src: vatican, alt: "Basílica de São Pedro e a Praça de São Pedro no Vaticano" },
+];
 
 const highlights = [
   { icon: Clock, title: "10+ anos", text: "Uma década de excelência em turismo privado pela Itália." },
@@ -54,17 +61,9 @@ function HomePage() {
     <>
       {/* HERO */}
       <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
-        <img
-          src={heroImg}
-          alt="Coliseu de Roma ao entardecer"
-          width={1920}
-          height={1280}
-          className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/30 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent" />
+        <HeroSlider slides={heroSlides} intervalMs={5000} />
 
-        <div className="container-x relative flex h-full flex-col justify-end pb-20 pt-32 md:justify-center md:pb-0">
+        <div className="container-x relative z-10 flex h-full flex-col justify-end pb-24 pt-32 md:justify-center md:pb-0">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 animate-fade-in">
               <span className="gold-rule" />

@@ -131,6 +131,10 @@
   from { transform: scale(1.05); }
   to { transform: scale(1.15); }
 }
+@keyframes hero-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
 
 @utility animate-fade-up {
   animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
