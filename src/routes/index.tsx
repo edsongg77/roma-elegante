@@ -101,7 +101,7 @@ function HomePage() {
               <span className="italic text-gold">de quem viaja bem.</span>
             </h2>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground">
-              A Tours Roma Italia nasceu do amor pela Itália e da certeza de que
+              A DSC Italy Tours nasceu do amor pela Itália e da certeza de que
               cada detalhe importa. Somos motoristas, guias e planejadores,
               dedicados a transformar deslocamentos em momentos memoráveis para
               famílias, executivos e viajantes exigentes.
@@ -192,7 +192,7 @@ function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <span className="eyebrow">Perché noi</span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl">
-              Por que escolher <span className="italic text-gold">Tours Roma Italia</span>
+              Por que escolher <span className="italic text-gold">DSC Italy Tours</span>
             </h2>
           </div>
           <div className="mt-16 grid gap-10 md:grid-cols-3">

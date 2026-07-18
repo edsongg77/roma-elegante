@@ -35,10 +35,10 @@ export function SiteHeader() {
     >
       <div className="container-x flex h-20 items-center justify-between">
         <Link to="/" className="group flex items-center gap-3">
-          <img src={logoRT} alt="Tours Roma Italia" width={40} height={40} className="h-10 w-10 shrink-0 object-contain" />
+          <img src={logoRT} alt="DSC Italy Tours" width={40} height={40} className="h-10 w-10 shrink-0 object-contain" />
           <span className="flex min-w-0 flex-col leading-tight">
             <span className="font-display text-base tracking-wide text-foreground sm:text-lg">
-              Tours Roma Italia
+              DSC Italy Tours
             </span>
             <span className="eyebrow text-[0.6rem]">Private Chauffeur & Tours</span>
           </span>

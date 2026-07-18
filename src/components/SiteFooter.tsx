@@ -9,8 +9,8 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img src={logoRT} alt="Tours Roma Italia" width={40} height={40} loading="lazy" className="h-10 w-10 object-contain" />
-              <span className="font-display text-xl">Tours Roma Italia</span>
+              <img src={logoRT} alt="DSC Italy Tours" width={40} height={40} loading="lazy" className="h-10 w-10 object-contain" />
+              <span className="font-display text-xl">DSC Italy Tours</span>
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
               Transfers privados e tours exclusivos pela Itália. Mais de uma década
@@ -68,7 +68,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Tours Roma Italia. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} DSC Italy Tours. Todos os direitos reservados.</p>
           <p className="tracking-[0.2em] uppercase">Made with care in Roma</p>
         </div>
       </div>

@@ -14,9 +14,9 @@ import hero from "@/assets/hero.jpg";
 export const Route = createFileRoute("/galeria")({
   head: () => ({
     meta: [
-      { title: "Galeria — Tours Roma Italia" },
+      { title: "Galeria — DSC Italy Tours" },
       { name: "description", content: "Momentos capturados em nossos transfers e tours pela Itália." },
-      { property: "og:title", content: "Galeria — Tours Roma Italia" },
+      { property: "og:title", content: "Galeria — DSC Italy Tours" },
       { property: "og:description", content: "Imagens dos nossos passeios e serviços pela Itália." },
     ],
   }),
